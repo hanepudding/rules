@@ -1,0 +1,10 @@
+payload:
+  # Finance
+  - DOMAIN-SUFFIX, hsbc.com
+  - DOMAIN-SUFFIX, hsbc.com.hk
+  - DOMAIN-SUFFIX, bochk.com
+  - DOMAIN-SUFFIX, ibkr.com
+  - DOMAIN-SUFFIX, interactivebrokers.com
+  - DOMAIN-SUFFIX, interactivebrokers.com.hk
+  - DOMAIN-SUFFIX, moomoo.com
+  - DOMAIN-SUFFIX, three.com.hk
