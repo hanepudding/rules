@@ -1,0 +1,23 @@
+payload:
+  - DOMAIN-SUFFIX, gylcxo.xyz, 主策略
+  - DOMAIN-SUFFIX, aqmixt.xyz, 主策略
+  - DOMAIN-SUFFIX, lelaer.com, DIRECT
+  - DOMAIN-SUFFIX, stat.go.jp, DIRECT
+  - DOMAIN-SUFFIX, nirsoft.net, DIRECT
+  - DOMAIN-SUFFIX, three.com.hk, Perf
+  - DOMAIN-SUFFIX, autopatchhk.yuanshen.com, GameDownload
+
+  # Finance
+  - DOMAIN-SUFFIX, hsbc.com, Perf
+  - DOMAIN-SUFFIX, hsbc.com.hk, Perf
+  - DOMAIN-SUFFIX, bochk.com, Perf
+  - DOMAIN-SUFFIX, ibkr.com, Perf
+  - DOMAIN-SUFFIX, interactivebrokers.com, Perf
+  - DOMAIN-SUFFIX, interactivebrokers.com.hk, Perf
+  - DOMAIN-SUFFIX, moomoo.com, 主策略
+
+
+  # Apex
+  - DOMAIN-SUFFIX, r5prod.stryder.respawn.com, Apex
+  - DOMAIN-SUFFIX, ea.com, Apex
+  - DOMAIN-SUFFIX, tnt-ea.com, Apex

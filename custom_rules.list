@@ -1,0 +1,17 @@
+# Customized Rules
+DOMAIN-SUFFIX,gylcxo.xyz,Primary Policy
+DOMAIN-SUFFIX,aqmixt.xyz,Primary Policy
+DOMAIN-SUFFIX,lelaer.com,DIRECT
+DOMAIN-SUFFIX,stat.go.jp,DIRECT
+DOMAIN-SUFFIX, nirsoft.net, DIRECT
+DOMAIN-SUFFIX, three.com.hk, Perf
+DOMAIN-SUFFIX, autopatchhk.yuanshen.com, GameDownload
+
+# Finance
+DOMAIN-SUFFIX,hsbc.com,Perf
+DOMAIN-SUFFIX,hsbc.com.hk,Perf
+DOMAIN-SUFFIX,bochk.com,Perf
+DOMAIN-SUFFIX,ibkr.com,Perf
+DOMAIN-SUFFIX,interactivebrokers.com,Perf
+DOMAIN-SUFFIX,interactivebrokers.com.hk,Perf
+DOMAIN-SUFFIX, moomoo.com, Primary Policy
