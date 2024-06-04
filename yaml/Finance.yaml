@@ -6,5 +6,7 @@ payload:
   - DOMAIN-SUFFIX, ibkr.com
   - DOMAIN-SUFFIX, interactivebrokers.com
   - DOMAIN-SUFFIX, interactivebrokers.com.hk
+  - DOMAIN-SUFFIX, ibllc.com
+  - DOMAIN-SUFFIX, tipranks.com
   - DOMAIN-SUFFIX, moomoo.com
   - DOMAIN-SUFFIX, three.com.hk
