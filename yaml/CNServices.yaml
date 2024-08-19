@@ -1,7 +1,6 @@
 payload:
   - DOMAIN-SUFFIX, lelaer.com
   - DOMAIN-SUFFIX, nirsoft.net
-  # 工福云工会
   - DOMAIN-SUFFIX, goodfull.vip
-  # 元翔空港快速
   - DOMAIN-SUFFIX, wx.yxzc01.com
+  - DOMAIN-SUFFIX, vnpy.com
