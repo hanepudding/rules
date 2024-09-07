@@ -36,7 +36,7 @@ jobs:
       run: |
         git add yaml/*.yaml
         git add list/*.list
-        git commit -m "雪の冠雲の帯 いつもけだかき姿にて"
+        git commit -m "雪の冠雲の帯 いつもけだかき姿にて" --only yaml list
         git push origin Yokosuka
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
