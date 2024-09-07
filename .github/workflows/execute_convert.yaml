@@ -1,4 +1,4 @@
-name: Convert Config Files and Push to Yokosuka
+name: Convert and Push List and YAML Files
 
 on:
   push:
@@ -6,11 +6,11 @@ on:
       - main
 
 jobs:
-  convert:
+  convert_and_push:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout main branch
       uses: actions/checkout@v4
 
     - name: Set up Python
@@ -22,27 +22,14 @@ jobs:
       run: |
         python convert.py
 
-    - name: Set committer identity
+    - name: Push to yaml-branch
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
-
-    - name: Forcefully switch to Yokosuka branch and ignore differences
-      run: |
         git checkout -B Yokosuka
-        git reset --hard origin/Yokosuka
-
-    - name: Remove unnecessary files in Yokosuka branch
-      run: |
-        git rm -rf .github
-        git rm -rf convert.py
-        git rm -rf LICENSE
-
-    - name: Commit and push changes to Yokosuka branch
-      run: |
-        git add yaml/*.yaml
         git add list/*.list
-        git commit -m "Auto-update"
-        git push --force origin Yokosuka
+        git add yaml/*.yaml
+        git commit -m "Auto-gen"
+        git push --force origin yaml-branch
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
