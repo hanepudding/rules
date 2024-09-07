@@ -21,7 +21,12 @@ jobs:
     - name: Run conversion script
       run: |
         python convert.py
-        
+
+    - name: Set committer identity for rebase
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+
     - name: Pull latest changes from Yokosuka branch
       run: |
         git checkout -B Yokosuka
@@ -29,8 +34,6 @@ jobs:
 
     - name: Commit and push changes to Yokosuka branch
       run: |
-        git config --global user.name "GitHub Action"
-        git config --global user.email "action@github.com"
         git add yaml/*.yaml
         git add list/*.list
         git commit -m "雪の冠雲の帯 いつもけだかき姿にて"
