@@ -22,28 +22,32 @@ jobs:
       run: |
         python convert.py
 
-    - name: Set committer identity for rebase
+    - name: Stash untracked files
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
+        git stash --include-untracked
 
     - name: Pull latest changes from Yokosuka branch
       run: |
         git checkout -B Yokosuka
-        git pull origin Yokosuka --rebase
+        git pull origin Yokosuka --rebase --strategy-option ours
+
+    - name: Apply stashed files
+      run: |
+        git stash pop
 
     - name: Remove unnecessary files in Yokosuka branch
       run: |
         git rm -rf .github
         git rm -rf convert.py
         git rm -rf LICENSE
-        git rm -rf other_files
 
     - name: Commit and push changes to Yokosuka branch
       run: |
         git add yaml/*.yaml
         git add list/*.list
-        git commit -m "雪の冠雲の帯 いつもけだかき姿にて"
-        git push origin Yokosuka
+        git commit -m "auto-gen files"
+        git push origin Yokosuka --force
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
