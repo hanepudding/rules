@@ -1,4 +1,4 @@
-name: Convert Config Files
+name: Convert Config Files and Push to Yokosuka
 
 on:
   push:
@@ -11,23 +11,25 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
 
     - name: Run conversion script
       run: |
         python convert.py
-
-    - name: Commit and push changes if any
+        
+    - name: Commit and push changes to Yokosuka branch
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
-        git add -f yaml/*.yaml
-        git diff --cached --quiet || git commit -m "Auto-gen .yaml files .list"
-        git push
+        git checkout -B Yokosuka
+        git add yaml/*.yaml
+        git add list/*.list
+        git commit -m "雪の冠雲の帯 いつもけだかき姿にて"
+        git push origin Yokosuka
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
