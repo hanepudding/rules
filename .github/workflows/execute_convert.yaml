@@ -30,6 +30,6 @@ jobs:
         git add list/*.list
         git add yaml/*.yaml
         git commit -m "Auto-gen"
-        git push --force origin yaml-branch
+        git push --force origin Yokosuka
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
