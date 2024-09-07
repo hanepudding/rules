@@ -22,14 +22,15 @@ jobs:
       run: |
         python convert.py
 
-    - name: Pull latest changes from Yokosuka branch
+    - name: Set committer identity
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+
+    - name: Forcefully switch to Yokosuka branch and ignore differences
       run: |
         git checkout -B Yokosuka
-        git pull origin Yokosuka --rebase --strategy-option ours
-
-    - name: Apply stashed files
-      run: |
-        git stash pop
+        git reset --hard origin/Yokosuka
 
     - name: Remove unnecessary files in Yokosuka branch
       run: |
@@ -41,7 +42,7 @@ jobs:
       run: |
         git add yaml/*.yaml
         git add list/*.list
-        git commit -m "auto-gen files"
-        git push origin Yokosuka --force
+        git commit -m "Auto-update"
+        git push --force origin Yokosuka
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
