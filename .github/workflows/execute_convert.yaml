@@ -22,10 +22,13 @@ jobs:
       run: |
         python convert.py
 
-    - name: Push to yaml-branch
+    - name: Push to Yokosuka
       run: |
         git config --global user.name "GitHub Action"
         git config --global user.email "action@github.com"
+        git rm -rf .github
+        git rm -rf convert.py
+        git rm -rf LICENSE
         git checkout -B Yokosuka
         git add list/*.list
         git add yaml/*.yaml
