@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "stat.go.jp",
+        "jrepoint.jp",
+        "mobilesuica.com"
+      ]
+    }
+  ]
+}

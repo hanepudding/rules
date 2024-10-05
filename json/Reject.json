@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "ad-display.diwodiwo.xyz",
+        "ad-channel.wikawika.xyz",
+        "ad-channel.diwodiwo.xyz"
+      ]
+    }
+  ]
+}

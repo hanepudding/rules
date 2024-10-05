@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "r5prod.stryder.respawn.com",
+        "ea.com",
+        "tnt-ea.com"
+      ]
+    }
+  ]
+}

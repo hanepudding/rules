@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "bochk.com",
+        "bochk02.etnet.com.hk",
+        "ocsp.digicert.com"
+      ]
+    }
+  ]
+}

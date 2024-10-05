@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "lelaer.com",
+        "nirsoft.net",
+        "goodfull.vip",
+        "wx.yxzc01.com",
+        "vnpy.com",
+        "jiaoyikecha.com",
+        "lajilao.top"
+      ]
+    }
+  ]
+}
