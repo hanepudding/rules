@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain_suffix": [
+        "hsbc.com",
+        "hsbc.com.hk",
+        "cdnhsbcrhostorage.azureedge.net",
+        "ibkr.com",
+        "ibllc.com",
+        "interactivebrokers.com",
+        "interactivebrokers.com.hk",
+        "moomoo.com",
+        "tipranks.com",
+        "three.com.hk"
+      ]
+    }
+  ]
+}
