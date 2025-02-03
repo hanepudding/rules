@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 def convert_list_to_yaml(list_file, yaml_file):
     with open(list_file, 'r') as f:
         domains = f.readlines()
@@ -9,8 +10,8 @@ def convert_list_to_yaml(list_file, yaml_file):
             f.write(f"  - {domain.strip()}\n")
 
 def main():
-    list_dir = 'list'
-    yaml_dir = 'yaml'
+    list_dir = Path('D:/Workspace/git-repos/rules/list')
+    yaml_dir = Path('D:/Workspace/git-repos/rules/yaml')
 
     if not os.path.exists(yaml_dir):
         os.makedirs(yaml_dir)
