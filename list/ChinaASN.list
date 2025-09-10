@@ -5272,3 +5272,6 @@ IP-ASN,212237,no-resolve
 # IP-ASN,216342,no-resolve
 # IP-ASN,216373,no-resolve
 # IP-ASN,216405,no-resolve
+
+# append
+IP-ASN,131483,no-resolve
