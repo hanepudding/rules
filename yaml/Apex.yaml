@@ -1,0 +1,5 @@
+payload:
+  - PROCESS-NAME,r5apex_dx12.exe
+  - DOMAIN-SUFFIX,r5prod.stryder.respawn.com
+  - DOMAIN-SUFFIX,ea.com
+  - DOMAIN-SUFFIX,tnt-ea.com
